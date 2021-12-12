@@ -1,0 +1,40 @@
+.spinning{
+    position: relative;
+    left: 50%;
+    top: 20%;
+    width: 150px;
+    margin-top: 10px;
+    background-color: transparent;
+    transform: rotate(-90deg) translateY(-50%);
+}
+.spin{
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    border-radius:10px;
+    animation:animate 2s linear infinite;
+    background-color: rgb(48, 48, 214);
+}
+.spin2{
+    animation-delay: 0.5s;
+}
+.spin3{
+    animation-delay: 1s;
+}
+.spin4{
+    animation-delay: 1.5s;
+}
+.spin5{
+    animation-delay: 2s;
+}
+@keyframes animate {
+    0%{
+        width: 20px;
+    }
+    50%{
+        width: 100px;
+    }
+    100%{
+        width:20px
+    }
+}
